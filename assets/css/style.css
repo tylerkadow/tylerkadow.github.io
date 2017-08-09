@@ -1,0 +1,106 @@
+body {
+	background-image: url(../images/my-little-pony-the-movie-poster.jpg);
+}
+
+.headPanel {
+	font-size: 24px;
+	font-family: "Helvetica";
+	font-weight: bold;
+}
+
+.panel > .panel-heading {
+	background-image: none;
+	background-color: pink;
+	color: black;
+	text-align: center;
+   }
+
+h4, #updates {
+	background-color: pink;
+	padding: 5px;
+}
+
+h4 {
+	width: 200px;
+}
+
+.pony {
+	display: inline-block;
+	width: 160px;
+	height: 150px;
+	padding: 5px;
+}
+
+.pony p {
+	text-align: center;
+}
+
+#rowOnePinkie,
+#rowTwoPinkie {
+	border: solid 4px pink;
+}
+
+#rowOneRainbow,
+#rowTwoRainbow {
+	border: solid 4px #00ffff;
+}
+
+#rowOneTwilight,
+#rowTwoTwilight {
+	border: solid 4px #9932CC;
+}
+
+#rowOneMuffins,
+#rowTwoMuffins {
+	border: solid 4px gray;
+}
+
+#rowOnePinkie,
+#rowOneRainbow,
+#rowOneTwilight,
+#rowOneMuffins{
+	background-color: white;
+}
+
+#rowTwoPinkie,
+#rowTwoRainbow,
+#rowTwoTwilight,
+#rowTwoMuffins{
+	background-color: #00FA9A;
+}
+
+#rowThreePinkie,
+#rowThreeRainbow,
+#rowThreeTwilight,
+#rowThreeMuffins {
+	background-color: red;
+	border: solid 4px black;
+}
+
+#rowFourPinkie,
+#rowFourRainbow,
+#rowFourTwilight,
+#rowFourMuffins {
+	background-color: black;
+	border: solid 4px gray;
+	color: white;
+}
+
+img {
+	height: 90px;
+	width: auto;
+	display: block;
+	margin: auto;
+}
+
+.restoredPonyContainer1,
+.restoredPonyContainer2,
+.restoredPonyContainer3,
+.restoredPonyContainer4 {
+	float: left;
+	display: none;
+}
+
+.resetButton {
+	display: none;
+}
