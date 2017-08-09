@@ -295,7 +295,7 @@ $(document).ready(function() {
 						pony1.ponyHealth -= pony2.counterAttack;
 						// defender health decreases by pony's attack
 						pony2.ponyHealth -= pony1.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony1.attack + " damage. <br>" + defenderName + " attacked you back for " + pony2.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony1.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony2.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony1.attack += pony1.incrementAttack;
 						console.log("your attack power: " + pony1.attack);
@@ -305,7 +305,7 @@ $(document).ready(function() {
 						pony1.ponyHealth -= pony3.counterAttack;
 						// defender health decreases by pony's attack
 						pony3.ponyHealth -= pony1.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony1.attack + " damage. <br>" + defenderName + " attacked you back for " + pony3.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony1.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony3.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony1.attack += pony1.incrementAttack;
 						console.log("your attack power: " + pony1.attack);
@@ -315,7 +315,7 @@ $(document).ready(function() {
 						pony1.ponyHealth -= pony4.counterAttack
 						// defender health decreases by pony's attack
 						pony4.ponyHealth -= pony1.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony1.attack + " damage. <br>" + defenderName + " attacked you back for " + pony4.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony1.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony4.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony1.attack += pony1.incrementAttack;
 						console.log("your attack power: " + pony1.attack);
@@ -330,7 +330,7 @@ $(document).ready(function() {
 						pony2.ponyHealth -= pony1.counterAttack;
 						// defender health decreases by pony's attack
 						pony1.ponyHealth -= pony2.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony2.attack + " damage. <br>" + defenderName + " attacked you back for " + pony1.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony2.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony1.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony2.attack += pony2.incrementAttack;
 						console.log("your attack power: " + pony2.attack);
@@ -340,7 +340,7 @@ $(document).ready(function() {
 						pony2.ponyHealth -= pony3.counterAttack;
 						// defender health decreases by pony's attack
 						pony3.ponyHealth -= pony2.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony2.attack + " damage. <br>" + defenderName + " attacked you back for " + pony3.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony2.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony3.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony2.attack += pony2.incrementAttack;
 						console.log("your attack power: " + pony2.attack);
@@ -350,7 +350,7 @@ $(document).ready(function() {
 						pony2.ponyHealth -= pony4.counterAttack;
 						// defender health decreases by pony's attack
 						pony4.ponyHealth -= pony2.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony2.attack + " damage. <br>" + defenderName + " attacked you back for " + pony4.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony2.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony4.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony2.attack += pony2.incrementAttack;
 						console.log("your attack power: " + pony2.attack);
@@ -365,7 +365,7 @@ $(document).ready(function() {
 						pony3.ponyHealth -= pony1.counterAttack;
 						// defender health decreases by pony's attack
 						pony1.ponyHealth -= pony3.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony3.attack + " damage. <br>" + defenderName + " attacked you back for " + pony1.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony3.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony1.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony3.attack += pony3.incrementAttack;
 						console.log("your attack power: " + pony3.attack);
@@ -375,7 +375,7 @@ $(document).ready(function() {
 						pony3.ponyHealth -= pony2.counterAttack;
 						// defender health decreases by pony's attack
 						pony2.ponyHealth -= pony3.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony3.attack + " damage. <br>" + defenderName + " attacked you back for " + pony2.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony3.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony2.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony3.attack += pony3.incrementAttack;
 						console.log("your attack power: " + pony3.attack);
@@ -385,7 +385,7 @@ $(document).ready(function() {
 						pony3.ponyHealth -= pony4.counterAttack;
 						// defender health decreases by pony's attack
 						pony4.ponyHealth -= pony3.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony3.attack + " damage. <br>" + defenderName + " attacked you back for " + pony4.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony3.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony4.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony3.attack += pony3.incrementAttack;
 						console.log("your attack power: " + pony3.attack);
@@ -400,7 +400,7 @@ $(document).ready(function() {
 						pony4.ponyHealth -= pony1.counterAttack;
 						// defender health decreases by pony's attack
 						pony1.ponyHealth -= pony4.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony4.attack + " damage. <br>" + defenderName + " attacked you back for " + pony1.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony4.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony1.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony4.attack += pony4.incrementAttack;
 						console.log("your attack power: " + pony4.attack);
@@ -410,7 +410,7 @@ $(document).ready(function() {
 						pony4.ponyHealth -= pony2.counterAttack;
 						// defender health decreases by pony's attack
 						pony2.ponyHealth -= pony4.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony4.attack + " damage. <br>" + defenderName + " attacked you back for " + pony2.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony4.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony2.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony4.attack += pony4.incrementAttack;
 						console.log("your attack power: " + pony4.attack);
@@ -420,7 +420,7 @@ $(document).ready(function() {
 						pony4.ponyHealth -= pony3.counterAttack;
 						// defender health decreases by pony's attack
 						pony3.ponyHealth -= pony4.attack;
-						$("#updates").html("You attacked " + defenderName + " for " + pony4.attack + " damage. <br>" + defenderName + " attacked you back for " + pony3.counterAttack + " damage");
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony4.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony3.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
 						pony4.attack += pony4.incrementAttack;
 						console.log("your attack power: " + pony4.attack);
