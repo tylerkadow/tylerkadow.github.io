@@ -446,7 +446,7 @@ $(document).ready(function() {
 	// function to deal with loss by pony
 	function ponyLost() {
 		isGameOver === true;
-		$("#updates").html("You have been defeated... Game over");
+		$("#updates").html("Harmony was not restored to your friends. Try again.");
 		$(".resetButton").css("display", "block");
 		consoleLogVariables();
 	}
@@ -454,7 +454,7 @@ $(document).ready(function() {
 	// function to deal with win by pony
 	function ponyWon() {
 		isGameOver === true;
-		$("#updates").html("Harmony has been restored! Game over");
+		$("#updates").html("Harmony has been restored! Play again.");
 		$(".resetButton").css("display", "block");
 		consoleLogVariables();
 	}
@@ -501,8 +501,9 @@ $(document).ready(function() {
 		
 		// record what pony tile the user clicked
 		// based off of value attribute on html
-		console.log("clicked: " + $(this).attr("value"));
-		ponyClicked = $(this).attr("value");
+		// "this" is the object with the class .pony
+		console.log("clicked: " + $(this).attr("title"));
+		ponyClicked = $(this).attr("title");
 		// if we don't have a pony yet, get one
 		selectpony();
 		// if we don't have a defender yet, get one
@@ -531,8 +532,6 @@ $(document).ready(function() {
 		friendshipTracking();
 		// check if pony has won
 		hasPonyWon();
-		// do a little debugging
-		consoleLogVariables();
 		// end by  making sure game board is updated
 		updateGameBoard();
 	});
