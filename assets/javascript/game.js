@@ -49,21 +49,13 @@ $(document).ready(function() {
 	var ponyClicked = "";
 	// gamePausedForAnotherDefender is when the game waits for you to pick another defender
 	var gamePausedForAnotherDefender = false;
-
-	// console log function for debugging
-	function consoleLogVariables() {
-		console.log("isGameOver: " + isGameOver + " isGameBegun: " + isGameBegun);
-		console.log("heroName: " + heroName + " defenderName: " + defenderName);
-		console.log("gamePausedForAnotherDefender: " + gamePausedForAnotherDefender);
-		console.log("==================================================")
-	}
 	// function to update the game board
 	function updateGameBoard() {
 		// go through each row
 		// and display the tile if it is in that row and visible
 		// otherwise make it invisible
 		// do this by targeting the id for that particular div
-		// then implanting css elements into that id.
+		// then implanting css display elements into that id.
 		// row 1:	
 		if (pony1.row === "1" && pony1.visibility === true) {
 			$("#rowOnePinkie").css("display", "inline-block")
@@ -149,6 +141,7 @@ $(document).ready(function() {
 			$("#rowFourMuffins").css("display", "none");
 		}
 		// This updates the health inside the character boxes
+		// .xhealth is the selector and .html is the action
 		$(".pinkieHealth").html(pony1.ponyHealth);
 		$(".rainbowHealth").html(pony2.ponyHealth);
 		$(".twilightHealth").html(pony3.ponyHealth);
@@ -198,7 +191,7 @@ $(document).ready(function() {
 	}
 
 	// function to select defender when tile is clicked and
-	// we already have a hero but not a defender
+	// we already have a hero (heroName is not blank) but we do not have a defender
 	function selectDefender() {
 		if (((heroName != "" && defenderName === "") || gamePausedForAnotherDefender === true) && isGameOver === false && ponyClicked!=heroName) {
 			defenderName = ponyClicked;
@@ -227,8 +220,9 @@ $(document).ready(function() {
 					break;
 			};
 			ponyClicked = "";
-			//$("#updates").html("");
 		}
+		// At the end we call the updateGameBoard function to change
+		// the row in the pony objects.
 		updateGameBoard();
 	}
 
@@ -258,7 +252,6 @@ $(document).ready(function() {
 				$(".restoredPonyContainer1").css("display", "inline-block");
 			}
 			gamePausedForAnotherDefender = true;
-			consoleLogVariables();
 		} else if (defenderName === "Rainbow" && pony2.ponyHealth <= 0) {
 			// the defender is Rainbow and her health <= 0
 			pony2.visibility = false;
@@ -443,25 +436,23 @@ $(document).ready(function() {
 		updateGameBoard();
 	}
 
-	// function to deal with loss by pony
+	// function to deal with loss
 	function ponyLost() {
 		isGameOver === true;
 		$("#updates").html("Harmony was not restored to your friends. Try again.");
 		$(".resetButton").css("display", "block");
-		consoleLogVariables();
 	}
 
-	// function to deal with win by pony
+	// function to deal with win
 	function ponyWon() {
 		isGameOver === true;
 		$("#updates").html("Harmony has been restored! Play again.");
 		$(".resetButton").css("display", "block");
-		consoleLogVariables();
 	}
 
 	// function to play friendship button sound when game running
 	// friendship button plays chime when we have pony and
-	// defender and isGameBegun is true and isGameOver is not false
+	// defender and isGameBegun is true and isGameOver is false
 	function playAttackSound() {
 		if (isGameBegun === true && isGameOver === false && gamePausedForAnotherDefender === false) {
 			var audio = new Audio("assets/sounds/magic-chime-02.mp3");
@@ -501,15 +492,13 @@ $(document).ready(function() {
 		
 		// record what pony tile the user clicked
 		// based off of value attribute on html
-		// "this" is the object with the class .pony
+		// "this" is the object with the class .pony which has been clicked.
 		console.log("clicked: " + $(this).attr("title"));
 		ponyClicked = $(this).attr("title");
 		// if we don't have a pony yet, get one
 		selectpony();
 		// if we don't have a defender yet, get one
 		selectDefender();
-		// do a little debugging
-		consoleLogVariables();
 		// end always by making sure game board is updated
 		updateGameBoard();
 	});
