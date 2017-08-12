@@ -2,10 +2,14 @@ body {
 	background-image: url(../images/my-little-pony-the-movie-poster.jpg);
 }
 
+@font-face {
+	font-family: Equestria;
+	src: url(Equestria.ttf);
+}
+
 .headPanel {
-	font-size: 24px;
-	font-family: "Helvetica";
-	font-weight: bold;
+	font-size: 20px;
+	font-family: Equestria;
 }
 
 .panel > .panel-heading {
@@ -13,11 +17,15 @@ body {
 	background-color: pink;
 	color: black;
 	text-align: center;
+	font-family: Equestria;
+	font-size: 20px;
    }
 
 h4, #updates {
 	background-color: pink;
 	padding: 5px;
+	font-family: "Helvetica";
+	font-size: 14px;
 }
 
 h4 {
