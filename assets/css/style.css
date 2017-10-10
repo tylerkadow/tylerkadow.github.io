@@ -13,6 +13,10 @@ body {
 	text-align: center;
 	background: #4aaaa5;
 	}
+
+.panel > .panel-heading a {
+	color: white;
+	}
 /* Style the links inside the navigation bar */
 
 .profile-pic {
@@ -74,4 +78,3 @@ textarea {
     padding: 25px;
     font-size: 10px;
 }
-
