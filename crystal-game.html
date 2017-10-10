@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Crystal Collector | Tyler Kadow</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style-crystal.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">Crystal Collector</div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">Instructions</div>
+        <div class="panel-body instructions">
+          You are given a random number to reach when you start the game. By clicking on one of the crystals below, you will add a specific amount of points to your total score. If your total score matches the random number, you win! But if you go over the random number, you lose! In every new game, the value of each crystal and the number to reach changes.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2"></div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Number to reach
+        </div>
+        <div class="panel-body">
+            <span id="targetNumber"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Current Score
+        </div>
+        <div class="panel-body">
+            <span id="score"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Wins
+        </div>
+        <div class="panel-body">
+            <span id="wins"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Losses
+        </div>
+        <div class="panel-body">
+            <span id="losses"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="gems">
+        <p>
+          Gems
+        </p>
+        <img src="assets/images/1.png" id="first" alt="Blue Crystal">
+        <img src="assets/images/2.png" id="second" alt="Green Crystal">
+        <img src="assets/images/3.png" id="third" alt="Red Crystal">
+        <img src="assets/images/4.png" id="fourth" alt="Yellow Crystal">
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+</div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/game-c.js"></script>
+
+</body>
+</html>

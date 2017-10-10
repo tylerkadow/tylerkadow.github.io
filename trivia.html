@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tyler Kadow's Trivia Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style-trivia.css">
+	<meta charset="utf-8">
+</head>
+<body>
+
+<div class="container" id="container">
+
+<h1>My Little Pony: Friendship is Magic Trivia Game</h1>
+
+<div class="container">
+	<div class="col-md-4"></div>
+	<div class="col-md-4">
+		<p class="instructions">
+			Test your fan knowledge and see if you are the ultimate My Little Pony: Friendship is Magic Fan! You have thirty seconds to guess all the answers correctly.
+		</p>
+	</div>
+	<div class="col-md-4"></div>
+</div>
+
+	<button type="button" class="btn btn-primary" id="start">
+		Start the quiz
+	</button>
+
+	<div class="triviaGame">
+
+		<div class="counter"></div>
+
+		<p>
+			<b>Question 1: </b>
+			Who is the voice actress for Applejack and Rainbow Dash?
+		</p>
+		<form>
+			<input type="radio" name="Q1" value="A1"> Ashleigh Ball
+			<input type="radio" name="Q1" value="A2"> Andrea Libman
+			<input type="radio" name="Q1" value="A3"> Tabitha St.Germain
+		</form>
+
+		<p>
+			<b>Question 2: </b>
+			Pinkie Pie's siblings are Limestone Pie, Marble Pie, and Cloudy Quartz.
+		</p>
+		<form>
+			<input type="radio" name="Q2" value="A2"> True
+			<input type="radio" name="Q2" value="A1"> False
+		</form>
+
+		<p>
+			<b>Question 3: </b>
+			Which of these celebrities has not voiced a character for the show?
+		</p>
+		<form>
+			<input type="radio" name="Q3" value="A1"> George Takei
+			<input type="radio" name="Q3" value="A2"> Weird Al Vankovic
+			<input type="radio" name="Q3" value="A3"> William Shatner
+		</form>
+
+		<p>
+			<b>Question 4: </b>
+			Who was the writer for "Magical Mystery Cure" (when Twilight becomes a princess)?
+		</p>
+		<form>
+			<input type="radio" name="Q4" value="A3"> Amy Keating Rogers
+			<input type="radio" name="Q4" value="A2"> Meghen McCarthy
+			<input type="radio" name="Q4" value="A1"> M. A. Larson
+		</form>
+
+		<p>
+			<b>Question 5: </b>
+			Who is the singing actress for both Rarity and Princess Luna?
+		</p>
+		<form>
+			<input type="radio" name="Q5" value="A2"> Rebecca Shoichet
+			<input type="radio" name="Q5" value="A1"> Kazumi Evans
+			<input type="radio" name="Q5" value="A3"> Ingrid Nilson
+		</form>
+
+	</div>
+
+	<div class="results"></div>
+
+	<button type="button" class="btn btn-success" id="submit">
+		Submit Your Answers
+	</button>
+
+	<button type="button" class="btn btn-secondary" id="reset">
+		Play again
+	</button>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</div>
+
+</body>
+
+</html>

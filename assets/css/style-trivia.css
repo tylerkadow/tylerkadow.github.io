@@ -1,0 +1,39 @@
+body {
+	text-align: center;
+	background-color: #FF69B4;
+	/*The deep shade of pink, may change it into an image*/
+}
+
+#container {
+	background-color: #DDA0DD;
+	height: 560px;
+}
+
+form {
+	margin-bottom: 10px;
+	}
+
+@font-face {
+	font-family: Equestria;
+	src: url(font/Equestria.ttf);
+}
+
+h1,
+b {
+    font-family: Equestria;
+    color: #4B0082;
+}
+
+b {
+	font-size: 20px;
+}
+
+.instructions {
+	text-align: left;
+}
+
+#reset,
+.triviaGame,
+#submit {
+	display: none;
+	}

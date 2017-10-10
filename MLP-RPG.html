@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pony RPG</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style-rpg.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default headPanel">
+			<div class="panel-heading">
+				<h1>
+					My Little Pony RPG
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+		<!--Character Choices-->
+		<div class="pony hero" id="rowOnePinkie" title="Pinkie">
+			<p>Pinkie Pie</p>
+			<img src="assets/images/pinkie.png" alt="Pinkie Pie">
+			<p>
+				Hit Points: 
+					<span class="pinkieHealth">
+					</span>
+			</p>
+		</div>
+		<div class="pony hero" id="rowOneRainbow" title="Rainbow">
+			<p>Rainbow Dash</p>
+			<img src="assets/images/rainbow.png" alt="Rainbow Dash">
+			<p>
+				Hit Points: 
+					<span class="rainbowHealth">
+					</span>
+			</p>
+		</div>
+		<div class="pony hero" id="rowOneTwilight" title="Twilight">
+			<p>Twilight Sparkle</p>
+			<img src="assets/images/twilight.png" alt="Twilight Sparkle">
+			<p>
+				Hit Points: 
+					<span class="twilightHealth">
+					</span>
+			</p>
+		</div>
+		<div class="pony hero" id="rowOneMuffins" title="Muffins">
+			<p>Muffins</p>
+			<img src="assets/images/muffins.png" alt="Muffins (Derpy)">
+			<p>
+				Hit Points: 
+					<span class="muffinsHealth">
+					</span>
+			</p>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Your Pony</div>
+		</div>
+		<!--The selected pony-->
+		<div class="pony hero" id="rowTwoPinkie" title="Pinkie">
+			<p>Pinkie Pie</p>
+			<img src="assets/images/pinkie.png" alt="Pinkie Pie">
+			<p>
+				Harmony Points: 
+					<span class="pinkieHealth">
+					</span>
+			</p>
+		</div>
+		<div class="pony hero" id="rowTwoRainbow" title="Rainbow">
+			<p>Rainbow Dash</p>
+			<img src="assets/images/rainbow.png" alt="Rainbow Dash">
+			<p>
+				Harmony Points: 
+					<span class="rainbowHealth">
+					</span>
+			</p>
+		</div>
+		<div class="pony hero" id="rowTwoTwilight" title="Twilight">
+			<p>Twilight Sparkle</p>
+			<img src="assets/images/twilight.png" alt="Twilight Sparkle">
+			<p>
+				Harmony Points: 
+					<span class="twilightHealth">
+					</span>
+			</p>
+		</div>
+		<div class="pony hero" id="rowTwoMuffins" title="Muffins">
+			<p>Muffins</p>
+			<img src="assets/images/muffins.png" alt="Muffins (Derpy)">
+			<p>
+				Harmony Points: 
+					<span class="muffinsHealth">
+					</span>
+			</p>
+		</div>
+			
+		<br>
+
+		<button type="button" class="btn btn-success friendshipButton">FRIENDSHIP!!!</button>
+
+	</div>
+
+	<div class="col-md-4">
+				<div class="panel panel-default">
+			<div class="panel-heading">Friends in Need</div>
+		</div>
+
+		<div class="pony opponents" id="rowThreePinkie" title="Pinkie">
+			<p>Pinkie Pie</p>
+			<img src="assets/images/pinkie.png" alt="Pinkie Pie">
+			<p>
+				Hit Points: 
+					<span class="pinkieHealth">
+					</span>
+			</p>
+		</div>
+		<div class="pony opponents" id="rowThreeRainbow" title="Rainbow">
+			<p>Rainbow Dash</p>
+			<img src="assets/images/rainbow.png" alt="Rainbow Dash">
+			<p>
+				Hit Points: 
+					<span class="rainbowHealth">
+					</span>
+			</p>
+		</div>
+		<div class="pony opponents" id="rowThreeTwilight" title="Twilight">
+			<p>Twilight Sparkle</p>
+			<img src="assets/images/twilight.png" alt="Twilight Sparkle">
+			<p>
+				Hit Points: 
+					<span class="twilightHealth">
+					</span>
+			</p>
+		</div>
+		<div class="pony opponents" id="rowThreeMuffins" title="Muffins">
+			<p>Muffins</p>
+			<img src="assets/images/muffins.png" alt="Muffins (Derpy)">
+			<p>
+				Hit Points: 
+					<span class="muffinsHealth">
+					</span>
+			</p>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Instructions</div>
+			<div class="panel-body">
+				Oh no! Discord is up to his old tricks again, spreading disharmony and chaos to our friends in Ponyville! Select a friend to assist you in returning harmony and friendship to Equestria. Then select the pony you want to help. Use the friendship button to lower your friends' disharmony points. If you restore love and harmony to all your friends, you win. But be careful! They will counter you fiercly!
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-4">
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Defending Pony</div>
+		</div>
+
+		<div class="pony opponents" id="rowFourPinkie" title="Pinkie">
+			<p>Pinkie Pie</p>
+			<img src="assets/images/discordedpinkie.png" alt="Pinkie Pie">
+			<p>
+				Disharmony Pts: 
+					<span class="pinkieHealth">
+					</span>
+			</p>
+		</div>
+
+		<div class="pony opponents" id="rowFourRainbow" title="Rainbow">
+			<p>Rainbow Dash</p>
+			<img src="assets/images/discordedrainbow.png" alt="Rainbow Dash">
+			<p>
+				Disharmony Pts: 
+					<span class="rainbowHealth">
+					</span>
+			</p>
+		</div>
+
+		<div class="pony opponents" id="rowFourTwilight" title="Twilight">
+			<p>Twilight Sparkle</p>
+			<img src="assets/images/discordedtwilight.png" alt="Twilight Sparkle">
+			<p>
+				Disharmony Pts: 
+					<span class="twilightHealth">
+					</span>
+			</p>
+		</div>
+		<div class="pony opponents" id="rowFourMuffins" title="Muffins">
+			<p>Muffins</p>
+			<img src="assets/images/discordedderpy.png" alt="Muffins (Derpy)">
+			<p>
+				Disharmony Pts: 
+					<span class="muffinsHealth">
+					</span>
+			</p>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" id="updates"></div>
+		</div>
+
+			<button type="button" class="btn btn-secondary resetButton">Play again</button>
+
+		<div class="restoredPonyContainer1">
+			<img src="assets/images/pinkie.png" alt="Pinkie">
+		</div>
+
+		<div class="restoredPonyContainer2">
+			<img src="assets/images/rainbow.png" alt="Rainbow">
+		</div>
+
+		<div class="restoredPonyContainer3">
+			<img src="assets/images/twilight.png" alt="Twilight">
+		</div>
+
+		<div class="restoredPonyContainer4">
+			<img src="assets/images/muffins.png" alt="Muffins (Derpy)">
+		</div>
+
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

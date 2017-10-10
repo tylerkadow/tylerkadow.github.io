@@ -1,0 +1,39 @@
+body {
+	background-color: #87CEFA;
+}
+
+.panel {
+	font-size: 20px;
+	text-align: center;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: orange;
+    color: white;
+
+}
+
+h1 {
+	font-size: 32px;
+	padding: 10px;
+	font-family: "Helvetica";
+	font-weight: bold;
+}
+
+.instructions {
+	background-color: #F0E68C;
+	text-align: left;
+}
+
+.gems {
+	background-color: #fffff0;
+	border: 4px solid black;
+	text-align: center;
+	padding: 1%;
+	margin: 1%;
+}
+
+.gems p {
+	font-weight: bold;
+}
