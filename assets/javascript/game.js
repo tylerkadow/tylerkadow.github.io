@@ -1,44 +1,24 @@
 $(document).ready(function() {
-	// pony objects
+
 	// attack is the initial attack for the pony as a hero
 	// incrementAttack is how much the hero's attack goes up
 	// counterAttack is the counter for the enemy ponies.
-	var pony1 = {
-		row : "1",
-		visibility : true,
-		ponyHealth : 125,
-		attack : 10,
-		incrementAttack : 12,
-		counterAttack : 8,
-		nameOfPony: "Pinkie"
-	};
-	var pony2 = {
-		row : "1",
-		visibility : true,
-		ponyHealth : 100,
-		attack : 10,
-		incrementAttack : 25,
-		counterAttack : 5,
-		nameOfPony: "Rainbow"
-	};
-	var pony3 = {
-		row : "1",
-		visibility : true,
-		ponyHealth : 150,
-		attack : 20,
-		incrementAttack : 5,
-		counterAttack : 20,
-		nameOfPony: "Twilight"
-	};
-	var pony4 = {
-		row : "1",
-		visibility : true,
-		ponyHealth : 180,
-		attack : 5,
-		incrementAttack : 5,
-		counterAttack : 20,
-		nameOfPony: "Muffins"
-	};
+
+function Pony (row, visibility, ponyHealth, attack, incrementAttack, counterAttack, nameOfPony){
+	this.row = row;
+	this.visibility = visibility;
+	this.ponyHealth = ponyHealth;
+	this.attack = attack;
+	this.incrementAttack = incrementAttack;
+	this.counterAttack = counterAttack;
+	this.nameOfPony = nameOfPony
+}
+
+var pinkie = new Pony("1",true,125,10,12,8,"Pinkie");
+var rainbow = new Pony("1",true,100,10,25,5,"Rainbow");
+var twilight = new Pony("1",true,150,20,5,20,"Twilight");
+var muffins = new Pony("1",true,180,5,5,20,"Muffins");
+
 	// gameOver is a boolean that shows whether the game is over or begun
 	var isGameOver = false;
 	var isGameBegun = false;
@@ -57,95 +37,95 @@ $(document).ready(function() {
 		// do this by targeting the id for that particular div
 		// then implanting css display elements into that id.
 		// row 1:	
-		if (pony1.row === "1" && pony1.visibility === true) {
+		if (pinkie.row === "1" && pinkie.visibility === true) {
 			$("#rowOnePinkie").css("display", "inline-block")
 		} else {
 			$("#rowOnePinkie").css("display", "none");
 		}
-		if (pony2.row === "1" && pony2.visibility === true) {
+		if (rainbow.row === "1" && rainbow.visibility === true) {
 			$("#rowOneRainbow").css("display", "inline-block")
 		} else {
 			$("#rowOneRainbow").css("display", "none");
 		}
-		if (pony3.row === "1" && pony3.visibility === true) {
+		if (twilight.row === "1" && twilight.visibility === true) {
 			$("#rowOneTwilight").css("display", "inline-block")
 		} else {
 			$("#rowOneTwilight").css("display", "none");
 		}
-		if (pony4.row === "1" && pony4.visibility === true) {
+		if (muffins.row === "1" && muffins.visibility === true) {
 			$("#rowOneMuffins").css("display", "inline-block")
 		} else {
 			$("#rowOneMuffins").css("display", "none");
 		}
 		// row 2:
-		if (pony1.row === "2" && pony1.visibility === true) {
+		if (pinkie.row === "2" && pinkie.visibility === true) {
 			$("#rowTwoPinkie").css("display", "inline-block")
 		} else {
 			$("#rowTwoPinkie").css("display", "none");
 		}
-		if (pony2.row === "2" && pony2.visibility === true) {
+		if (rainbow.row === "2" && rainbow.visibility === true) {
 			$("#rowTwoRainbow").css("display", "inline-block")
 		} else {
 			$("#rowTwoRainbow").css("display", "none");
 		}
-		if (pony3.row === "2" && pony3.visibility === true) {
+		if (twilight.row === "2" && twilight.visibility === true) {
 			$("#rowTwoTwilight").css("display", "inline-block")
 		} else {
 			$("#rowTwoTwilight").css("display", "none");
 		}
-		if (pony4.row === "2" && pony4.visibility === true) {
+		if (muffins.row === "2" && muffins.visibility === true) {
 			$("#rowTwoMuffins").css("display", "inline-block")
 		} else {
 			$("#rowTwoMuffins").css("display", "none");
 		}
 		// row 3:
-		if (pony1.row === "3" && pony1.visibility === true) {
+		if (pinkie.row === "3" && pinkie.visibility === true) {
 			$("#rowThreePinkie").css("display", "inline-block")
 		} else {
 			$("#rowThreePinkie").css("display", "none");
 		}
-		if (pony2.row === "3" && pony2.visibility === true) {
+		if (rainbow.row === "3" && rainbow.visibility === true) {
 			$("#rowThreeRainbow").css("display", "inline-block")
 		} else {
 			$("#rowThreeRainbow").css("display", "none");
 		}
-		if (pony3.row === "3" && pony3.visibility === true) {
+		if (twilight.row === "3" && twilight.visibility === true) {
 			$("#rowThreeTwilight").css("display", "inline-block")
 		} else {
 			$("#rowThreeTwilight").css("display", "none");
 		}
-		if (pony4.row === "3" && pony4.visibility === true) {
+		if (muffins.row === "3" && muffins.visibility === true) {
 			$("#rowThreeMuffins").css("display", "inline-block")
 		} else {
 			$("#rowThreeMuffins").css("display", "none");
 		}
 		// row 4:
-		if (pony1.row === "4" && pony1.visibility === true) {
+		if (pinkie.row === "4" && pinkie.visibility === true) {
 			$("#rowFourPinkie").css("display", "inline-block")
 		} else {
 			$("#rowFourPinkie").css("display", "none");
 		}
-		if (pony2.row === "4" && pony2.visibility === true) {
+		if (rainbow.row === "4" && rainbow.visibility === true) {
 			$("#rowFourRainbow").css("display", "inline-block")
 		} else {
 			$("#rowFourRainbow").css("display", "none");
 		}
-		if (pony3.row === "4" && pony3.visibility === true) {
+		if (twilight.row === "4" && twilight.visibility === true) {
 			$("#rowFourTwilight").css("display", "inline-block")
 		} else {
 			$("#rowFourTwilight").css("display", "none");
 		}
-		if (pony4.row === "4" && pony4.visibility === true) {
+		if (muffins.row === "4" && muffins.visibility === true) {
 			$("#rowFourMuffins").css("display", "inline-block")
 		} else {
 			$("#rowFourMuffins").css("display", "none");
 		}
 		// This updates the health inside the character boxes
 		// .xhealth is the selector and .html is the action
-		$(".pinkieHealth").html(pony1.ponyHealth);
-		$(".rainbowHealth").html(pony2.ponyHealth);
-		$(".twilightHealth").html(pony3.ponyHealth);
-		$(".muffinsHealth").html(pony4.ponyHealth);
+		$(".pinkieHealth").html(pinkie.ponyHealth);
+		$(".rainbowHealth").html(rainbow.ponyHealth);
+		$(".twilightHealth").html(twilight.ponyHealth);
+		$(".muffinsHealth").html(muffins.ponyHealth);
 	}
 	// function to select pony when tile is clicked and
 	function selectpony() {
@@ -157,34 +137,34 @@ $(document).ready(function() {
 		// If heroName is Pinkie, she becomes visible in row 2
 		// Everypony else is visible in row 3
 				case "Pinkie":
-					pony1.row = "2";
-					pony2.row = "3";
-					pony3.row = "3";
-					pony4.row = "3";
+					pinkie.row = "2";
+					rainbow.row = "3";
+					twilight.row = "3";
+					muffins.row = "3";
 					break;
 		// If heroName is Rainbow, she becomes visible in row 2
 		// Everypony else is visible in row 3
 				case "Rainbow":
-					pony1.row = "3";
-					pony2.row = "2";
-					pony3.row = "3";
-					pony4.row = "3";
+					pinkie.row = "3";
+					rainbow.row = "2";
+					twilight.row = "3";
+					muffins.row = "3";
 					break;
 		// If heroName is Twilight, she becomes visible in row 2
 		// Everypony else is visible in row 3
 				case "Twilight":
-					pony1.row = "3";
-					pony2.row = "3";
-					pony3.row = "2";
-					pony4.row = "3";
+					pinkie.row = "3";
+					rainbow.row = "3";
+					twilight.row = "2";
+					muffins.row = "3";
 					break;
 		// If heroName is Muffins, she becomes visible in row 2
 		// Everypony else is visible in row 3
 				case "Muffins":
-					pony1.row = "3";
-					pony2.row = "3";
-					pony3.row = "3";
-					pony4.row = "2";
+					pinkie.row = "3";
+					rainbow.row = "3";
+					twilight.row = "3";
+					muffins.row = "2";
 					break;
 			}
 		}
@@ -199,22 +179,22 @@ $(document).ready(function() {
 			// When a pony is clicked to be the defender, their row assignment value becomes "4"
 			// Also, the game starts and is not paused anymore for another defender
 				case "Pinkie":
-					pony1.row = "4";
+					pinkie.row = "4";
 					isGameBegun = true;
 					gamePausedForAnotherDefender = false;
 					break;
 				case "Rainbow":
-					pony2.row = "4";
+					rainbow.row = "4";
 					isGameBegun = true;
 					gamePausedForAnotherDefender = false;
 					break;
 				case "Twilight":
-					pony3.row = "4";
+					twilight.row = "4";
 					isGameBegun = true;
 					gamePausedForAnotherDefender = false;
 					break;
 				case "Muffins":
-					pony4.row = "4";
+					muffins.row = "4";
 					isGameBegun = true;
 					gamePausedForAnotherDefender = false;
 					break;
@@ -228,49 +208,49 @@ $(document).ready(function() {
 
 	// function to see if pony or defender have lost
 	function haveHeroOrDefenderLost() {
-		if (heroName === "Pinkie" && pony1.ponyHealth <= 0) {
+		if (heroName === "Pinkie" && pinkie.ponyHealth <= 0) {
 			// the pony is Pinkie and her health <= 0
 			// call the user pony lost function
 			ponyLost();
-		} else if (heroName === "Rainbow" && pony2.ponyHealth <= 0) {
+		} else if (heroName === "Rainbow" && rainbow.ponyHealth <= 0) {
 			// the pony is Rainbow and her health <= 0
 			// call the user pony lost function
 			ponyLost();
-		} else if (heroName === "Twilight" && pony3.ponyHealth <= 0) {
+		} else if (heroName === "Twilight" && twilight.ponyHealth <= 0) {
 			// the pony is Twilight and her health <= 0
 			// call the user pony lost function
 			ponyLost();
-		} else if (heroName === "Muffins" && pony4.ponyHealth <= 0) {
+		} else if (heroName === "Muffins" && muffins.ponyHealth <= 0) {
 			// the pony is Muffins and his health <= 0
 			// call the user pony lost function
 			ponyLost();
-		} else if (defenderName === "Pinkie" && pony1.ponyHealth <= 0) {
+		} else if (defenderName === "Pinkie" && pinkie.ponyHealth <= 0) {
 			// the defender is Pinkie and her health <= 0
-			pony1.visibility = false;
+			pinkie.visibility = false;
 			if (gamePausedForAnotherDefender === false) {
 				$("#updates").html("You have brought harmony back to " + defenderName + ".<br>You can choose to help another friend.");	
 				$(".restoredPonyContainer1").css("display", "inline-block");
 			}
 			gamePausedForAnotherDefender = true;
-		} else if (defenderName === "Rainbow" && pony2.ponyHealth <= 0) {
+		} else if (defenderName === "Rainbow" && rainbow.ponyHealth <= 0) {
 			// the defender is Rainbow and her health <= 0
-			pony2.visibility = false;
+			rainbow.visibility = false;
 			if (gamePausedForAnotherDefender === false) {
 				$("#updates").html("You have brought harmony back to " + defenderName + ".<br>You can choose to help another friend.");
 				$(".restoredPonyContainer2").css("display", "inline-block");
 			}
 			gamePausedForAnotherDefender = true;
-		} else if (defenderName === "Twilight" && pony3.ponyHealth <= 0) {
+		} else if (defenderName === "Twilight" && twilight.ponyHealth <= 0) {
 			// the defender is Twilight and her health <= 0
-			pony3.visibility = false;
+			twilight.visibility = false;
 			if (gamePausedForAnotherDefender === false) {
 				$("#updates").html("You have brought harmony back to " + defenderName + ".<br>You can choose to help another friend.");
 				$(".restoredPonyContainer3").css("display", "inline-block");
 			}
 			gamePausedForAnotherDefender = true;
-		} else if (defenderName === "Muffins" && pony4.ponyHealth <= 0) {
+		} else if (defenderName === "Muffins" && muffins.ponyHealth <= 0) {
 			// the defender is Muffins and her health <= 0
-			pony4.visibility = false;
+			muffins.visibility = false;
 			if (gamePausedForAnotherDefender === false) {
 				$("#updates").html("You have brought harmony back to " + defenderName + ".<br>You can choose to help another friend.");
 				$(".restoredPonyContainer4").css("display", "inline-block");
@@ -290,140 +270,140 @@ $(document).ready(function() {
 			switch (heroName) {
 				case "Pinkie":
 					if (defenderName === "Rainbow") {
-						console.log("your attack: " + pony1.attack + " counter recd: " + pony2.counterAttack);
+						console.log("your attack: " + pinkie.attack + " counter recd: " + rainbow.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony1.ponyHealth -= pony2.counterAttack;
+						pinkie.ponyHealth -= rainbow.counterAttack;
 						// defender health decreases by pony's attack
-						pony2.ponyHealth -= pony1.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony1.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony2.counterAttack + " damage");
+						rainbow.ponyHealth -= pinkie.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pinkie.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + rainbow.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony1.attack += pony1.incrementAttack;
-						console.log("your attack power: " + pony1.attack);
+						pinkie.attack += pinkie.incrementAttack;
+						console.log("your attack power: " + pinkie.attack);
 					} else if (defenderName === "Twilight") {
-						console.log("your attack: " + pony1.attack + " counter recd: " + pony3.counterAttack);
+						console.log("your attack: " + pinkie.attack + " counter recd: " + twilight.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony1.ponyHealth -= pony3.counterAttack;
+						pinkie.ponyHealth -= twilight.counterAttack;
 						// defender health decreases by pony's attack
-						pony3.ponyHealth -= pony1.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony1.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony3.counterAttack + " damage");
+						twilight.ponyHealth -= pinkie.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pinkie.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + twilight.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony1.attack += pony1.incrementAttack;
-						console.log("your attack power: " + pony1.attack);
+						pinkie.attack += pinkie.incrementAttack;
+						console.log("your attack power: " + pinkie.attack);
 					} else if (defenderName === "Muffins") {
-						console.log("your attack: " + pony1.attack + " counter recd: " + pony4.counterAttack);
+						console.log("your attack: " + pinkie.attack + " counter recd: " + muffins.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony1.ponyHealth -= pony4.counterAttack
+						pinkie.ponyHealth -= muffins.counterAttack
 						// defender health decreases by pony's attack
-						pony4.ponyHealth -= pony1.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony1.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony4.counterAttack + " damage");
+						muffins.ponyHealth -= pinkie.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + pinkie.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + muffins.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony1.attack += pony1.incrementAttack;
-						console.log("your attack power: " + pony1.attack);
+						pinkie.attack += pinkie.incrementAttack;
+						console.log("your attack power: " + pinkie.attack);
 					} else {
 						console.log("error");
 					}
 					break;
 				case "Rainbow":
 					if (defenderName === "Pinkie") {
-						console.log("your attack: " + pony2.attack + " counter recd: " + pony1.counterAttack);
+						console.log("your attack: " + rainbow.attack + " counter recd: " + pinkie.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony2.ponyHealth -= pony1.counterAttack;
+						rainbow.ponyHealth -= pinkie.counterAttack;
 						// defender health decreases by pony's attack
-						pony1.ponyHealth -= pony2.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony2.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony1.counterAttack + " damage");
+						pinkie.ponyHealth -= rainbow.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + rainbow.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pinkie.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony2.attack += pony2.incrementAttack;
-						console.log("your attack power: " + pony2.attack);
+						rainbow.attack += rainbow.incrementAttack;
+						console.log("your attack power: " + rainbow.attack);
 					} else if (defenderName === "Twilight") {
-						console.log("your attack: " + pony2.attack + " counter recd: " + pony3.counterAttack);
+						console.log("your attack: " + rainbow.attack + " counter recd: " + twilight.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony2.ponyHealth -= pony3.counterAttack;
+						rainbow.ponyHealth -= twilight.counterAttack;
 						// defender health decreases by pony's attack
-						pony3.ponyHealth -= pony2.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony2.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony3.counterAttack + " damage");
+						twilight.ponyHealth -= rainbow.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + rainbow.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + twilight.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony2.attack += pony2.incrementAttack;
-						console.log("your attack power: " + pony2.attack);
+						rainbow.attack += rainbow.incrementAttack;
+						console.log("your attack power: " + rainbow.attack);
 					} else if (defenderName === "Muffins") {
-						console.log("your attack: " + pony2.attack + " counter recd: " + pony4.counterAttack);
+						console.log("your attack: " + rainbow.attack + " counter recd: " + muffins.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony2.ponyHealth -= pony4.counterAttack;
+						rainbow.ponyHealth -= muffins.counterAttack;
 						// defender health decreases by pony's attack
-						pony4.ponyHealth -= pony2.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony2.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony4.counterAttack + " damage");
+						muffins.ponyHealth -= rainbow.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + rainbow.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + muffins.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony2.attack += pony2.incrementAttack;
-						console.log("your attack power: " + pony2.attack);
+						rainbow.attack += rainbow.incrementAttack;
+						console.log("your attack power: " + rainbow.attack);
 					} else {
 						console.log("error");
 					}
 					break;
 				case "Twilight":
 					if (defenderName === "Pinkie") {
-						console.log("your attack: " + pony3.attack + " counter recd: " + pony1.counterAttack);
+						console.log("your attack: " + twilight.attack + " counter recd: " + pinkie.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony3.ponyHealth -= pony1.counterAttack;
+						twilight.ponyHealth -= pinkie.counterAttack;
 						// defender health decreases by pony's attack
-						pony1.ponyHealth -= pony3.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony3.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony1.counterAttack + " damage");
+						pinkie.ponyHealth -= twilight.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + twilight.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pinkie.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony3.attack += pony3.incrementAttack;
-						console.log("your attack power: " + pony3.attack);
+						twilight.attack += twilight.incrementAttack;
+						console.log("your attack power: " + twilight.attack);
 					} else if (defenderName === "Rainbow") {
-						console.log("your attack: " + pony3.attack + " counter recd: " + pony2.counterAttack);
+						console.log("your attack: " + twilight.attack + " counter recd: " + rainbow.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony3.ponyHealth -= pony2.counterAttack;
+						twilight.ponyHealth -= rainbow.counterAttack;
 						// defender health decreases by pony's attack
-						pony2.ponyHealth -= pony3.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony3.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony2.counterAttack + " damage");
+						rainbow.ponyHealth -= twilight.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + twilight.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + rainbow.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony3.attack += pony3.incrementAttack;
-						console.log("your attack power: " + pony3.attack);
+						twilight.attack += twilight.incrementAttack;
+						console.log("your attack power: " + twilight.attack);
 					} else if (defenderName === "Muffins") {
-						console.log("your attack: " + pony3.attack + " counter recd: " + pony4.counterAttack);
+						console.log("your attack: " + twilight.attack + " counter recd: " + muffins.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony3.ponyHealth -= pony4.counterAttack;
+						twilight.ponyHealth -= muffins.counterAttack;
 						// defender health decreases by pony's attack
-						pony4.ponyHealth -= pony3.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony3.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony4.counterAttack + " damage");
+						muffins.ponyHealth -= twilight.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + twilight.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + muffins.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony3.attack += pony3.incrementAttack;
-						console.log("your attack power: " + pony3.attack);
+						twilight.attack += twilight.incrementAttack;
+						console.log("your attack power: " + twilight.attack);
 					} else {
 						console.log("error");
 					}
 					break;
 				case "Muffins":
 					if (defenderName === "Pinkie") {
-						console.log("your attack: " + pony4.attack + " counter recd: " + pony1.counterAttack);
+						console.log("your attack: " + muffins.attack + " counter recd: " + pinkie.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony4.ponyHealth -= pony1.counterAttack;
+						muffins.ponyHealth -= pinkie.counterAttack;
 						// defender health decreases by pony's attack
-						pony1.ponyHealth -= pony4.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony4.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony1.counterAttack + " damage");
+						pinkie.ponyHealth -= muffins.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + muffins.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pinkie.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony4.attack += pony4.incrementAttack;
-						console.log("your attack power: " + pony4.attack);
+						muffins.attack += muffins.incrementAttack;
+						console.log("your attack power: " + muffins.attack);
 					} else if (defenderName === "Rainbow") {
-						console.log("your attack: " + pony4.attack + " counter recd: " + pony2.counterAttack);
+						console.log("your attack: " + muffins.attack + " counter recd: " + rainbow.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony4.ponyHealth -= pony2.counterAttack;
+						muffins.ponyHealth -= rainbow.counterAttack;
 						// defender health decreases by pony's attack
-						pony2.ponyHealth -= pony4.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony4.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony2.counterAttack + " damage");
+						rainbow.ponyHealth -= muffins.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + muffins.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + rainbow.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony4.attack += pony4.incrementAttack;
-						console.log("your attack power: " + pony4.attack);
+						muffins.attack += muffins.incrementAttack;
+						console.log("your attack power: " + muffins.attack);
 					} else if (defenderName === "Twilight") {
-						console.log("your attack: " + pony4.attack + " counter recd: " + pony3.counterAttack);
+						console.log("your attack: " + muffins.attack + " counter recd: " + twilight.counterAttack);
 						// pony health decreases by defender's counterAttack
-						pony4.ponyHealth -= pony3.counterAttack;
+						muffins.ponyHealth -= twilight.counterAttack;
 						// defender health decreases by pony's attack
-						pony3.ponyHealth -= pony4.attack;
-						$("#updates").html("You attacked Discorded " + defenderName + " for " + pony4.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + pony3.counterAttack + " damage");
+						twilight.ponyHealth -= muffins.attack;
+						$("#updates").html("You attacked Discorded " + defenderName + " for " + muffins.attack + " damage. <br>" + "Discorded " + defenderName + " attacked you for " + twilight.counterAttack + " damage");
 						// pony's attack increases by incrementAttack
-						pony4.attack += pony4.incrementAttack;
-						console.log("your attack power: " + pony4.attack);
+						muffins.attack += muffins.incrementAttack;
+						console.log("your attack power: " + muffins.attack);
 					} else {
 						console.log("error");
 					}
@@ -462,16 +442,16 @@ $(document).ready(function() {
 
 	// function to see if the pony has won
 	function hasPonyWon() {
-		if (heroName==="Pinkie" && (pony2.visibility===false && pony3.visibility===false && pony4.visibility===false)) {
+		if (heroName==="Pinkie" && (rainbow.visibility===false && twilight.visibility===false && muffins.visibility===false)) {
 			// pony has won if the visibility of all three other ponies is false.
 			ponyWon();
-		} else if (heroName==="Rainbow" && (pony1.visibility===false && pony3.visibility===false && pony4.visibility===false)) {
+		} else if (heroName==="Rainbow" && (pinkie.visibility===false && twilight.visibility===false && muffins.visibility===false)) {
 			// pony has won if the visibility of all three other ponies is false.
 			ponyWon();
-		} else if (heroName==="Twilight" && (pony1.visibility===false && pony2.visibility===false && pony4.visibility===false)) {
+		} else if (heroName==="Twilight" && (pinkie.visibility===false && rainbow.visibility===false && muffins.visibility===false)) {
 			// pony has won if the visibility of all three other ponies is false.
 			ponyWon();
-		} else if (heroName==="Muffins" && (pony1.visibility===false && pony2.visibility===false && pony3.visibility===false)) {
+		} else if (heroName==="Muffins" && (pinkie.visibility===false && rainbow.visibility===false && twilight.visibility===false)) {
 			// pony has won if the visibility of all three other ponies is false.
 			ponyWon();
 		}
