@@ -13,10 +13,12 @@ var contactData = firebase.database();
 
 $("#submit").on("click", function() {
 
+	var name = $("#name").val().trim();
 	var email = $("#inputEmail3").val().trim();
 	var message = $("#text").val().trim();
 
 	var visitor = {
+		name: name,
 		email: email,
 		message: message
 	};
@@ -25,6 +27,7 @@ $("#submit").on("click", function() {
 
 	alert("Thank you for your interest!");
 
+	$("#name").val("");
 	$("#inputEmail3").val("");
 	$("#text").val("");
 
