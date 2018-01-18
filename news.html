@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/news.css">
+	<title>Tyler Kadow's Home Page</title>
+</head>
+<body>
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>
+				<a href="index.html">Tyler Kadow</a>
+			</h1>
+		</div>
+		<div class="panel-body">
+			<div class="wrapper" id="portfolio">
+				<a href="index.html" type="button" class="btn btn-info">About</a>
+				<a href="portfolio.html" type="button" class="btn btn-info">Portfolio</a>
+				<a href="contact.html" type="button" class="btn btn-info">Contact</a>
+				<a href="news.html" type="button" class="btn btn-info">News</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row content">
+			<div class="col-md-9">
+				<div class="panel panel-info">
+				<div class="panel-heading">Select News Source</div>
+				<div class="panel-body text-center">
+					<div class="row">
+
+					<span class="col-md-3">
+					    <span class="btn-group-vertical" data-toggle="buttons">
+					        <button class="btn btn-basic" name="news" id="abc-news">ABC News</button>
+					        <button class="btn btn-info" name="news" id="axios">Axios</button>
+					        <button class="btn btn-warning" name="news" id="breitbart-news">Breitbart</button>
+					        <button class="btn btn-danger" name="news" id="cnn">CNN</button>
+					    </span>
+					</span>
+
+					<span class="col-md-3">
+						<span class="btn-group-vertical" data-toggle="buttons">
+						    <button class="btn btn-primary" name="news" id="daily-mail">Daily Mail</button>
+						    <button class="btn btn-default" name="news" id="die-zeit">Die Zeit</button>
+						    <button class="btn btn-basic" name="news" id="financial-times">Financial Times</button>
+						    <button class="btn btn-default" name="news" id="fortune">Fortune</button>
+						</span>
+					</span>
+
+					<span class="col-md-3">
+					    <span class="btn-group-vertical" data-toggle="buttons">
+					        <button class="btn btn-primary" name="news" id="fox-news">Fox News</button>
+					        <button class="btn btn-success" name="news" id="the-huffington-post">Huffington Post</button>
+					        <button class="btn btn-basic" name="news" id="new-york-magazine">NY Magazine</button>
+					        <button class="btn btn-default" name="news" id="the-new-york-times">NY Times</button>
+						</span>
+					</span>
+
+					<span class="col-md-3">
+					    <span class="btn-group-vertical" data-toggle="buttons">
+						    <button class="btn btn-danger" name="news" id="politico">Politico</button>
+						    <button class="btn btn-warning" name="news" id="reddit-r-all">Reddit</button>
+						    <button class="btn btn-success" name="news" id="techcrunch">Tech Crunch</button>
+						    <button class="btn btn-primary" name="news" id="the-hill">The Hill</button>
+						</span>
+					</span>
+
+				    </div>
+				</div>
+			</div>
+
+		      <div class="panel panel-info">
+		        <div class="panel-heading"><b>News</b></div>
+		        <div class="panel-body" id="news-stories"></div>
+		        <div class="panel-footer">Powered by <a href="http://newsapi.com">News API</a></div>
+		      </div>
+
+		</div>	
+
+			<div class="col-sm-3">
+				<div class="panel panel-info">
+					<div class="panel-heading">Contact me</div>
+					<div class="panel-body">
+							<a href="https://github.com/tylerkadow" target="_blank">
+								<img src="assets/images/Github.png" alt="Github" height="70" width="70">
+							</a>
+
+							<a href="https://www.linkedin.com/in/tylerkadow/" target="_blank">
+								<img src="assets/images/Linkedin.png" alt="Linkedin" height="70" width="70">
+							</a>
+
+							<a href="https://stackoverflow.com/users/8308852/tyler-k" target="_blank">
+								<img src="assets/images/stackoverflow.png" alt="Stackoverflow" height="70" width="70">
+							</a>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<footer class="myFooter">
+		<p>&copy; 2017 Tyler Kadow</p>
+	</footer>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="assets/javascript/profile.js"></script>
+
+	<script type="text/javascript" src="assets/javascript/news.js"></script>
+
+</body>
+</html>
