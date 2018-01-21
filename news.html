@@ -2,7 +2,11 @@
 <html>
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery-1.12.4.min.js">\x3C/script>')</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/news.css">
 	<title>Tyler Kadow's Home Page</title>
@@ -28,49 +32,34 @@
 	<div class="container">
 		<div class="row content">
 			<div class="col-md-9">
-				<div class="panel panel-info">
-				<div class="panel-heading">Select News Source</div>
 				<div class="panel-body text-center">
-					<div class="row">
-
-					<span class="col-md-3">
-					    <span class="btn-group-vertical" data-toggle="buttons">
-					        <button class="btn btn-basic" name="news" id="abc-news">ABC News</button>
-					        <button class="btn btn-info" name="news" id="axios">Axios</button>
-					        <button class="btn btn-warning" name="news" id="breitbart-news">Breitbart</button>
-					        <button class="btn btn-danger" name="news" id="cnn">CNN</button>
-					    </span>
-					</span>
-
-					<span class="col-md-3">
-						<span class="btn-group-vertical" data-toggle="buttons">
-						    <button class="btn btn-primary" name="news" id="daily-mail">Daily Mail</button>
-						    <button class="btn btn-default" name="news" id="die-zeit">Die Zeit</button>
-						    <button class="btn btn-basic" name="news" id="financial-times">Financial Times</button>
-						    <button class="btn btn-default" name="news" id="fortune">Fortune</button>
-						</span>
-					</span>
-
-					<span class="col-md-3">
-					    <span class="btn-group-vertical" data-toggle="buttons">
-					        <button class="btn btn-primary" name="news" id="fox-news">Fox News</button>
-					        <button class="btn btn-success" name="news" id="the-huffington-post">Huffington Post</button>
-					        <button class="btn btn-basic" name="news" id="new-york-magazine">NY Magazine</button>
-					        <button class="btn btn-default" name="news" id="the-new-york-times">NY Times</button>
-						</span>
-					</span>
-
-					<span class="col-md-3">
-					    <span class="btn-group-vertical" data-toggle="buttons">
-						    <button class="btn btn-danger" name="news" id="politico">Politico</button>
-						    <button class="btn btn-warning" name="news" id="reddit-r-all">Reddit</button>
-						    <button class="btn btn-success" name="news" id="techcrunch">Tech Crunch</button>
-						    <button class="btn btn-primary" name="news" id="the-hill">The Hill</button>
-						</span>
-					</span>
-
-				    </div>
-				</div>
+				  <div class="dropdown">
+				    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select News Source
+				    <span class="caret"></span></button>
+				    <ul class="dropdown-menu">
+				      <li class="dropdown-header">News Sources</li>
+				      <li name="news" id="abc-news"><a>ABC</a></li>
+					  <li name="news" id="associated-press"><a>Associated Press</a></li>
+				      <li name="news" id="axios"><a>Axios</a></li>
+				      <li name="news" id="breitbart-news"><a>Breitbart</a></li>
+				      <li name="news" id="cnn"><a>CNN</a></li>
+				      <li name="news" id="daily-mail"><a>Daily Mail</a></li>
+				      <li name="news" id="die-zeit"><a>Die Zeit</a></li>
+				      <li name="news" id="financial-times"><a>Financial Times</a></li>
+				      <li name="news" id="fortune"><a>Fortune</a></li>
+				      <li name="news" id="fox-news"><a>Fox News</a></li>
+				      <li name="news" id="the-huffington-post"><a>Huffington Post</a></li>
+				      <li name="news" id="new-york-magazine"><a>NY Magazine</a></li>
+				      <li name="news" id="the-new-york-times"><a>NY Times</a></li>
+				      <li name="news" id="politico"><a>Politico</a></li>
+				      <li name="news" id="reddit-r-all"><a>Reddit</a></li>
+				      <li name="news" id="techcrunch"><a>Tech Crunch</a></li>
+				      <li name="news" id="the-hill"><a>The Hill</a></li>
+				      <li class="divider"></li>
+				      <li class="dropdown-header">Dropdown header 2</li>
+				      <li><a href="#">About Us</a></li>
+				    </ul>
+				  </div>
 			</div>
 
 		      <div class="panel panel-info">
