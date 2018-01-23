@@ -12,8 +12,15 @@ $(document).ready(function(){
       $("#news-stories").empty();
 
       for (var i = 0; i < 10; i++) {
+        var title;
+        if (data.articles[i].title != null) {
+          title = data.articles[i].title
+        }
+        else {
+          title = data.articles[i].description
+        }
         $('#news-stories').append(
-        "<a target='_blank' href='" + data.articles[i].url + "'><b>" + data.articles[i].title + "</b></a><div class='space'></div>");
+        "<a target='_blank' href='" + data.articles[i].url + "'><b>" + title + "</b></a><div class='space'></div>");
       }
     });
   });

@@ -3,6 +3,12 @@
 	width: 30px;
 }
 
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
 .space {
 	height: 1px;
 	background-color: #D3D3D3;
@@ -10,9 +16,13 @@
 	margin-bottom: 4px;
 }
 
+.dropdown-thingie {
+	padding-bottom: 5px;
+}
+
 .dropdown-menu {
-  left: 50%;
-  right: auto;
-  text-align: center;
-  transform: translate(-50%, 0);
+	left: 50%;
+	right: auto;
+	text-align: center;
+	transform: translate(-50%, 0);
 }
