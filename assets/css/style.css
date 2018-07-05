@@ -1,89 +1,279 @@
-p, form {
-	color: #777777;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 16px;
-}
-
 body {
-	background-image: url('../images/background.png');
+    background-color: #D3D3D3;
 }
 
-.panel > .panel-heading {
-	color: #eee;
-	text-align: center;
-	background: #4aaaa5;
-	}
-
-.panel > .panel-heading a {
-	color: white;
-	}
-
-/* Style the links inside the navigation bar */
-
-.profile-pic {
-	float: right;
-	margin: 0 0 10px 10px;
+#painting {
+    position: relative;
+    height: 850px;
+    width: 850px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: auto;
 }
 
-.panel > .panel-body .wrapper {
-	text-align: center;
+#red {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background-color: red;
 }
 
-button a {
-	color: white;
+#yellow {
+    position: absolute;
+    height: 300px;
+    width: 75px;
+    background-color: yellow;
+    top: 550px;
 }
 
-/*The min-height calculation 1s so the footer would remain at the bottom of the page*/
-
-.content {
-	min-height: calc(100vh - 70px);
+#blue {
+    position: absolute;
+    height: 250px;
+    width: 270px;
+    background-color: blue;
+    top: 550px;
+    left: 350px;
 }
 
-/*Styling for the contact page*/
-
-#submit {
-	width: 100px;
-	height: 40px;
-	background-color: #4aaaa5;
-	color: white;
-	font-size: 16px;
+.bar {
+    position: absolute;
+    background-color: black;
 }
 
-.textbox, textarea {
-	margin-top: 5px;
-	width: 99%;
-	padding: 2px;
+#bar-one {
+    height: 850px;
+    width: 15px;
+    left: 350px;
 }
 
-.textbox {
-	height: 24px;
+#bar-two {
+    height: 15px;
+    width: 850px;
+    top: 350px;
 }
 
-textarea {
-	height: 200px;
+#bar-three {
+    height: 15px;
+    width: 850px;
+    top: 550px;   
 }
 
-/*For the footer, with the negative margin-top and clear: both to make a sticky footer*/
-
-.myFooter {
-	text-align: center;
-	background-color: #777777;
-	clear: both;
+#bar-four {
+    height: 300px;
+    width: 15px;
+    top: 550px;
+    left: 75px;
 }
 
-/*For the text of the footer*/
-
-.myFooter p {
-	color: white;
-	margin: 0px;
-    padding: 25px;
-    font-size: 10px;
+#bar-five {
+    height: 300px;
+    width: 15px;
+    top: 550px;
+    left: 620px;
 }
 
-@media screen and (max-width: 640px) {
-	.profile-pic {
-		width: 100%;
-		margin: 0;
-		text-align: center;
-	}
+#bar-six {
+    height: 15px;
+    width: 270px;
+    top: 800px;
+    left: 350px;
+}
+
+#index-portfolio {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    font-family: 'Impact';
+}
+
+
+#index-portfolio div {
+    position: absolute;
+    top: 120px;
+    left: 104px;
+    font-size: 44px;
+    color: white;
+}
+
+#index-news {
+    position: absolute;
+    height: 250px;
+    width: 270px;
+    top: 565px;
+    left: 360px;
+    font-family: 'Impact';
+}
+
+#index-news div {
+    position: absolute;
+    top: 85px;
+    left: 85px;
+    font-size: 40px;
+    color: white;
+}
+
+#index-contact {
+    position: absolute;
+    font-family: 'Impact';
+    height: 285px;
+    width: 75px;
+    top: 565px;
+}
+
+#index-contact div {
+    position: absolute;
+    top: 130px;
+    font-size: 26px;
+    color: black;
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+#welcome {
+    position: absolute;
+    text-align: justify;
+    padding: 10px;
+    left: 365px;
+}
+
+#welcome div {
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 900px) {
+
+#painting {
+    position: relative;
+    height: 850px;
+    width: 500px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: auto;
+}
+
+#red {
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    background-color: red;
+}
+
+#yellow {
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    background-color: yellow;
+    top: 640px;
+}
+
+#blue {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    top: 790px;
+    left: 440px;
+}
+
+#bar-one {
+    height: 850px;
+    width: 15px;
+    left: 100px;
+}
+
+#bar-two {
+    height: 15px;
+    width: 500px;
+    top: 150px;
+}
+
+#bar-three {
+    height: 15px;
+    width: 500px;
+    top: 640px;   
+}
+
+#bar-four {
+    visibility: hidden;
+}
+
+#bar-five {
+    height: 15px;
+    width: 500px;
+    top:  790px;
+    left: 0px;
+}
+
+#bar-six {
+    height: 50px;
+    width: 15px;
+    top: 800px;
+    left: 425px;
+}
+
+#index-portfolio {
+    position: absolute;
+    height: 150px;
+    width: 100px;
+}
+
+#index-portfolio div {
+    position: absolute;
+    top: 65px;
+    left: 23px;
+    font-size: 14px;
+}
+
+#index-news {
+    position: absolute;
+    height: 50px;
+    width: 60px;
+    top: 800px;
+    left: 440px;
+}
+
+#index-news div {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+#index-contact {
+    position: absolute;
+    height: 135px;
+    width: 100px;
+    top: 655px;
+}
+
+#index-contact div {
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    font-size: 22px;
+    color: black;
+}
+
+#welcome {
+    position: absolute;
+    text-align: justify;
+    padding: 10px;
+    left: 115px;
+    top: 200px;
+}
+
 }

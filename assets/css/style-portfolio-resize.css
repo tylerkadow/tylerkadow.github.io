@@ -1,0 +1,356 @@
+@media screen and (max-width: 1211px) {
+
+#painting {
+    height: 900px;
+    width: 800px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: auto;
+}
+
+#red {
+	position: absolute;
+	height: 160px;
+	width: 48px;
+	top: 0;
+	left: 0;
+	background-color: red;
+}
+
+#red-two {
+	position: absolute;
+	height: 48px;
+	width: 48px;
+	background-color: red;
+	left: 0px;
+	top: 440px;
+}
+
+#red-three {
+	position: absolute;
+	height: 80px;
+	width: 90px;
+	background-color: red;
+	left: 690px;
+	top: 370px;
+}
+
+#yellow {
+	position: absolute;
+    height: 180px;
+    width: 100px;
+    background-color: yellow;
+    top: 310px;
+    left: 250px;
+}
+
+#blue {
+	position: absolute;
+	height: 80px;
+	width: 100px;
+	background-color: blue;
+	left: 250px;
+	top: 0px;
+}
+
+#blue-two {
+	position: absolute;
+    height: 25px;
+    width: 120px;
+    background-color: blue;
+    top: 875px;
+    left: 680px;
+}
+
+#home {
+	position: absolute;
+	height: 160px;
+	width: 48px;
+	top: 0;
+	left: 0;
+}
+
+#home div {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	font-size: 18px;
+	color: #f9f9f9;
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+
+	/* IE */
+	-ms-transform: rotate(-90deg);
+
+	/* Opera */
+	-o-transform: rotate(-90deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#psychic {
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	left: 690px;
+	top: 370px;
+}
+
+#psychic div {
+	position: absolute;
+	top: 12px;
+	left: 7px;
+	font-size: 20px;
+	color: #f9f9f9;
+}
+
+#crystal {
+	position: absolute;
+    height: 250px;
+    width: 120px;
+    top: 550px;
+}
+
+#crystal div {
+	position: absolute;
+	color: #f9f9f9;
+	font-size: 30px;
+	top: 80px;
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+
+	/* IE */
+	-ms-transform: rotate(-90deg);
+
+	/* Opera */
+	-o-transform: rotate(-90deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#spontaneous {
+	position: absolute;
+	height: 80px;
+	width: 100px;
+	left: 250px;
+	top: 0;
+}
+
+#spontaneous div {
+	position: absolute;
+	font-size: 16px;
+    color: #f9f9f9;
+    top: 20px;
+    left: 2px;
+}
+
+#mlp-rpg {
+	position: absolute;
+    height: 90px;
+    width: 160px;
+    top: 350px;
+    left: 215px;
+    background-color: yellow;
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+
+	/* IE */
+	-ms-transform: rotate(-90deg);
+
+	/* Opera */
+	-o-transform: rotate(-90deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#mlp-rpg div {
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	font-size: 20px;
+	color: black;
+}
+
+#burger {
+	position: absolute;
+	height: 360px;	
+	width: 290px;
+	left: 250px;
+	top: 500px;
+	background-color: #f9f9f9;
+}
+
+#burger div {
+	position: absolute;
+	font-size: 30px;
+	left: 55px;
+	top: 150px;
+}
+
+#giphy {
+	position: absolute;
+    height: 25px;
+    width: 110px;
+    top: 875px;
+    left: 690px;
+	background-color: blue;
+}
+
+#giphy div {
+	position: absolute;
+	left: 35px;
+	top: 3px;
+	font-size: 15px;
+}
+
+#trivia {
+	position: absolute;
+	height: 48px;
+	width: 48px;
+	background-color: red;
+	left: 0px;
+	top: 440px;
+}
+
+#trivia div {
+	position: absolute;
+	font-size: 16px;
+	top: 0px;
+	color: #f9f9f9;
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+
+	/* IE */
+	-ms-transform: rotate(-90deg);
+
+	/* Opera */
+	-o-transform: rotate(-90deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#bar-one {
+    position: absolute;
+    height: 488px;
+    width: 15px;
+    background-color: black;
+    left: 48px;
+}
+
+#bar-two {
+    position: absolute;
+    height: 15px;
+    width: 785px;
+    background-color: black;
+    top: 80px;
+}
+
+#bar-three {
+    position: absolute;
+    height: 15px;
+    width: 800px;
+    background-color: black;
+    top: 486px;
+}
+
+#bar-four {
+    position: absolute;
+    height: 900px;
+    width: 15px;
+    background-color: black;
+    left: 235px;
+}
+
+#bar-five {
+    position: absolute;
+    height: 900px;
+    width: 15px;
+    background-color: black;
+    left: 675px;
+}
+
+#bar-six {
+    position: absolute;
+    height: 488px;
+    width: 15px;
+    background-color: black;
+    left: 340px;
+}
+
+#bar-seven {
+	position: absolute;
+    height: 488px;
+    width: 15px;
+    background-color: black;
+    top: 0px;
+    left: 770px;
+}
+
+#bar-eight {
+	position: absolute;
+    height: 15px;
+    width: 720px;
+    background-color: black;
+    top: 300px;
+    left: 60px;
+}
+
+#bar-nine {
+	position: absolute;
+	height: 15px;
+	width: 550px;
+	background-color: black;
+	left: 250px;
+	top: 860px;
+}
+
+#bar-ten {
+	position: absolute;
+	height: 875px;
+	width: 15px;
+	background-color: black;
+	left: 620px;
+}
+
+#bar-eleven {
+	position: absolute;
+	height: 900px;
+	width: 15px;
+	background-color: black;
+	left: 570px;
+}
+
+#bar-twelve {
+	position: absolute;
+	height: 900px;
+	width: 15px;
+	background-color: black;
+	left: 540px;
+}
+
+#bar-thirteen {
+	position: absolute;
+	height: 15px;
+	width: 260px;
+	background-color: black;
+	top: 680px;
+	left: 540px;
+}
+
+}

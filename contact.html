@@ -1,104 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tyler Kadow's Website</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<title>Tyler Kadow's Contact Page</title>
+	<link rel="stylesheet" href="assets/css/style-contact.css">
+	<meta charset="utf-8">
+	<meta name="author" content="Tyler Kadow">
+	<meta name="keywords" content="coding,coder,programmer,programming,piet,mondrian,github,linkedin,stackoverflow">
+	<meta name="description" content="Tyler Kadow's Contact Page">
 </head>
 <body>
-
-	<div class="panel panel-info">
-		<div class="panel-heading">
-			<h1>
-				<a href="index.html">Tyler Kadow</a>
-			</h1>
-		</div>
-		<div class="panel-body">
-			<div class="wrapper" id="portfolio">
-				<a href="index.html" type="button" class="btn btn-info">About</a>
-				<a href="portfolio.html" type="button" class="btn btn-info">Portfolio</a>
-				<a href="contact.html" type="button" class="btn btn-info">Contact</a>
-				<a href="news.html" type="button" class="btn btn-info">News</a>
+	<div id="painting">
+		<div id="red"></div>
+		<div id="yellow"></div>
+		<div id="blue"></div>
+		<div class="bar" id="bar-one"></div>
+		<div class="bar" id="bar-two"></div>
+		<div class="bar" id="bar-three"></div>
+		<div class="bar" id="bar-four"></div>
+		<div class="bar" id="bar-five"></div>
+		<a href="index.html">
+			<div id="home">
+				<div>Home</div>
 			</div>
+		</a>
+		<div id="also">
+			Feel free to contact me by clicking <a href = "mailto: tylerkadow@gmail.com">here</a>
 		</div>
+		<a class="contact" id="github" href="https://github.com/tylerkadow" target="_blank">
+			<img alt="Github" src="assets/images/Github.png">
+		</a>
+		<a class="contact" id="linkedin" href="https://www.linkedin.com/in/tylerkadow/" target="_blank">
+			<img alt="Linkedin" src="assets/images/Linkedin.png">
+		</a>
+		<a class="contact" id="stackoverflow" href="https://stackoverflow.com/users/8308852/tyler-k" target="_blank">
+			<img alt="Stack Overflow" src="assets/images/stackoverflow.png">
+		</a>
 	</div>
 
-	<div class="container">
-		<div class="row content">
-			<div class="col-md-9">
-				<div class="panel panel-info">
-				<div class="panel-heading">Contact Form</div>
-				<div class="panel-body">
-					<form class="form-horizontal">
-
-						<div class="form-group">
-							<label class="col-sm-2 control-label">Name</label>
-					    	<div class="col-sm-10">
-					    		<input type="name" class="form-control" id="name" placeholder="Name">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-					    	<div class="col-sm-10">
-					    		<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="control-label col-sm-2">Message</label>
-							<div class="col-sm-10">
-								<textarea class="form-control" id="text" rows="6"></textarea>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-					    		<button type="submit" id="submit" onclick="return false" class="btn btn-primary">Submit</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>	
-
-			<div class="col-sm-3">
-				<div class="panel panel-info">
-					<div class="panel-heading">Contact me</div>
-					<div class="panel-body">
-							<a href="https://github.com/tylerkadow" target="_blank">
-								<img src="assets/images/Github.png" alt="Github" height="70" width="70">
-							</a>
-
-							<a href="https://www.linkedin.com/in/tylerkadow/" target="_blank">
-								<img src="assets/images/Linkedin.png" alt="Linkedin" height="70" width="70">
-							</a>
-
-							<a href="https://stackoverflow.com/users/8308852/tyler-k" target="_blank">
-								<img src="assets/images/stackoverflow.png" alt="Stackoverflow" height="70" width="70">
-							</a>
-					</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-	<footer class="myFooter">
-		<p>&copy; 2017 Tyler Kadow</p>
-	</footer>
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<script type="text/javascript" src="assets/javascript/profile.js"></script>
-
-	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
-
-	<script type="text/javascript" src="assets/javascript/database.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
