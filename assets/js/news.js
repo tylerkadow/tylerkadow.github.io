@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 // Search for news by news outlet buttons
-  $('body').on("click", '[name="news"]', function(){
+  $('body').on("click touchstart", '[name="news"]', function(){
     $.ajax({
       url: "https://newsapi.org/v2/everything?sources=" + this.id + "&apiKey=35477fbe6cda44b0853c42734970825a",
       type: "GET",
