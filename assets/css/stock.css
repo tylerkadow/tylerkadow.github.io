@@ -1,0 +1,33 @@
+.tk {
+	font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.index-card {
+	width: 120px;
+	height: 120px;
+	padding: 1em;
+	background-color: lightgray;
+	border-style: solid;
+	border-width: medium;
+	border-radius: 8px;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.index, .index-card {
+	font-weight: bold;
+}
+
+.indices { display: flex; justify-content: space-between; }
+
+.green {
+	background-color: #31a745;
+	border-color: darkgreen;
+	color: white;
+}
+
+.red {
+	background-color: #e3352b;
+	border-color: darkred;
+	color: white;
+}
