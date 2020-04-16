@@ -2,44 +2,9 @@ body {
     background-color: #D3D3D3;
 }
 
-#painting {
-    position: relative;
-    height: 750px;
-    width: 500px;
-    background-color: #f9f9f9;
-    text-align: center;
-    margin: auto;
-}
-
-#red, #news-stories {
-	position: absolute;
-	width: 350px;
-	height: 500px;
-	background-color: red;
-	left: 150px;
-	text-align: left;
-}
-
 #news-stories {
 	padding: 5px;
 	color: white;
-}
-
-#blue {
-	position: absolute;
-	width: 135px;
-	height: 235px;
-	background-color: blue;
-	top: 515px;
-}
-
-#yellow {
-	position: absolute;
-	width: 75px;
-	height: 75px;
-	background-color: yellow;
-	left: 425px;
-	top: 675px;
 }
 
 .bar {
@@ -47,85 +12,8 @@ body {
 	background-color: black;
 }
 
-#bar-one {
-	height: 750px;
-	width: 15px;
-	left: 135px;
-}
-
-#bar-two {
-	height: 15px;
-	width: 500px;
-	top: 500px;
-}
-
-#bar-three {
-	width: 150px;
-	height: 15px;
-	top: 100px;
-}
-
-#bar-four {
-	width: 75px;
-	height: 15px;
-	top: 660px;
-	left: 425px;
-}
-
-#bar-five {
-	width: 15px;
-	height: 250px;
-	left: 410px;
-	top: 500px;
-}
-
-#also {
-	position: absolute;
-	width: 240px;
-	height: 100px;
-	top: 550px;
-	left: 161px;
-	font-size: 24px;
-}
-
-.contact {
-	position: absolute;
-	width: 100px;
-	height: auto;
-	left: 250px;
-}
-
-#github {
-	top: 25px;
-}
-
-#linkedin {
-	top: 180px;
-}
-
-#stackoverflow {
-	top: 335px;
-}
-
-#home {
-	position: absolute;
-	width: 135px;
-	height: 235px;
-	background-color: blue;
-	top: 515px;
-	font-family: 'Impact';
-}
-
-#home div {
-	position: absolute;
-	left: 40px;
-	top: 50px;
-	color: white;
-	font-size: 26px;
-}
-
 .space {
-	height: 1px;
+	height: 2px;
 	background-color: black;
 	margin-top: 4px;
 	margin-bottom: 4px;
@@ -137,10 +25,6 @@ body {
     overflow-x: hidden;
 }
 
-.dropdown-thingie {
-	padding-bottom: 5px;
-}
-
 .dropdown-menu {
 	left: 50%;
 	right: auto;
@@ -148,6 +32,16 @@ body {
 	transform: translate(-50%, 0);
 }
 
-a:link {
-    color: white;
+.column-dropdown {
+	width: 29%;
+	float: left;
+}
+
+.column-news {
+	width: 70%;
+	float: left;
+}
+
+.column-news a {
+	text-align: left;
 }
