@@ -136,8 +136,6 @@ $("#submit").on("click", function(event) {
                         var queryURL = "https://api.openweathermap.org/data/2.5/weather?units=imperial&APPID=acaa23f8d409ee273187d2b9b0388e23&q=" + $("#zip_code").val() + ",US";
                         console.log(queryURL);
 
-
-
                         $.ajax({
                             url: queryURL,
                             method: 'GET'
@@ -177,8 +175,6 @@ $("#submit").on("click", function(event) {
                             console.log(response);
                         });
                     };
-
-                    weatherRequest(44114);
 
    
 
