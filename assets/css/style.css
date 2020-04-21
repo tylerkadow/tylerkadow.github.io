@@ -181,6 +181,7 @@ a:active {
 .wallet {
     font-size: 14px;
     overflow-wrap: break-word;
+    font-family: Courier;
 }
 
 /*Slideshow code*/
@@ -248,4 +249,23 @@ a:active {
 
 .port-image {
   margin-top: 20px;
+}
+
+footer {
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: darkgray;
+   color: black;
+   text-align: center;
+}
+
+.bottom {
+  margin: 65px;
+}
+
+footer p {
+  font-size: 20px;
+  font-family: Rockout;
 }
