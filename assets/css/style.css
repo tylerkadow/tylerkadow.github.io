@@ -27,6 +27,15 @@ body {
   padding: 8px 0;
 }
 
+#chrome {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.alt {
+  font-style: normal;
+}
+
 #line { 
     background-color: black;
     height: 4px;
