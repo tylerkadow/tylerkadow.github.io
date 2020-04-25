@@ -22,10 +22,14 @@ body {
     margin: auto;
 }
 
+.coinz {
+  background-color: #FAB57F;
+  padding: 8px 0;
+}
+
 #line { 
     background-color: black;
     height: 4px;
-    margin: 8px 0 0 0;
 }
 
 #top {
@@ -34,7 +38,7 @@ body {
 
 #name {
     text-align: left;
-    font-size: 50px;
+    font-size: 60px;
     font-family: Rockout;
     margin: 5px;
 }
