@@ -22,6 +22,10 @@ body {
     margin: auto;
 }
 
+.futura-light {
+  font-family: futura-pt, sans-serif;font-weight: 300;
+}
+
 .coinz {
   background-color: #FAB57F;
   padding: 8px 0;
@@ -127,8 +131,22 @@ a:active {
     width: 250px;
     outline: 3px solid black;
     float: left;
-    margin-right: 15px;
-    margin-bottom: 15px;
+}
+
+.logos {
+  width: 150px;
+  margin: 1em;
+}
+
+#personal-photo {
+    width: 250px;
+    outline: 3px solid black;
+    float: right;
+}
+
+.skills {
+  width: 200px;
+  margin-top: 15px;
 }
 
 .bookish {
@@ -173,6 +191,30 @@ a:active {
 .column {
   float: left;
   width: 45%;
+  padding: 10px;
+}
+
+.column1 {
+  float: left;
+  width: 35%;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  width: 60%;
+  padding: 10px;
+}
+
+.column3 {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
+
+.column4 {
+  float: left;
+  width: 20%;
   padding: 10px;
 }
 
