@@ -1,0 +1,52 @@
+body {
+	background-image: url(../img/pokemon/pokeball.png);
+	text-align: center;
+}
+
+@font-face {
+	font-family: Pixel;
+	src: url(../fonts/fonts/PixelSansSerif.ttf);
+}
+
+p, #master {
+	font-family: 'Pixel', sans-serif;
+	font-size: 20px;
+	padding: 5px;
+	background-color: white;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+#caught1, #caught2, #caught3, #caught4, #catch-char, #char, #char-p, #catch-pika, #pika, #pika-p, #catch-squirt, #squirt, #squirt-p, #catch-snom, #snom, #snom-p, #a, #b, #c, #d, #e, #f, #g, #h, #shake, #master {
+	display: none;
+}
+
+#caught, #caught1, #caught2, #caught3, #caught4 {
+	position: fixed;
+	top: 300px;
+	left: 20px;
+	background-color: white;
+	padding: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+#catch-char, #catch-squirt, #catch-pika, #catch-snom {
+	width: 50%;
+	text-align: center;
+}
+
+#top-margin {
+	margin-top: 40px;
+}
+
+.break {
+	display: block;
+	margin: 5px;
+}
+
+#master {
+	width: 100%;
+}
